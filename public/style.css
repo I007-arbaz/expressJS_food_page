@@ -1,0 +1,13 @@
+h1 {
+    color: rgb(199, 61, 61);
+    text-transform: uppercase;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+}
+.item {
+    color: red;
+    font-size: 26px;
+}

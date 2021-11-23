@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: white;
+    margin: 0;
+    padding: 0 4rem;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(224, 224, 224);
+}
+
+.nav-item {
+    display: flex;
+    list-style: none;
+    font-size: 0.9rem;
+    margin-left: auto;
+    padding-left: 8rem;
+}
+.navbar .nav-item li {
+    padding: 1rem 0;
+    position: relative;
+}
+.navbar .nav-item li .nav-link {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+    color: rgb(138, 138, 138);
+}
+.active {
+    color: rgb(236, 75, 64) !important;
+}
+.btns {
+    margin-left: auto;
+}
+.login {
+    border: none;
+    padding: 0.5rem 1rem;
+    background: rgb(236, 75, 64);
+    color: white;
+    font-weight: 600;
+}
+.login a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.signUp {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+.signUp a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    html, body {
+        font-size: 87.5%;
+    }
+    .navbar .nav-item {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0;
+        justify-content: space-between;
+    }
+    .nav-item, .btns {
+        margin-left: 0;
+    }
+    
+
+}

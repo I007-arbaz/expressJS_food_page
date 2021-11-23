@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    font-size: 10rem;
+    color: rgb(236, 109, 136);
+
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.homeBtn {
+    background: rgb(236, 109, 136);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        font-size: 80%;
+    }
+}

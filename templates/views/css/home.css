@@ -1,0 +1,176 @@
+h1 {
+    color: rgb(238, 85, 46);
+    margin: auto;
+    width: max-content;
+    margin-top: 1rem;
+    font-size: 4.5rem;
+}
+span {
+    color: black;
+}
+.sub-header {
+    margin: auto;
+    color: rgb(63, 63, 63);
+    letter-spacing: 1px;
+    width: max-content;
+}
+
+.container {
+    max-width: 1360px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.imageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+.imageContainer .image {
+    height: 450px;
+    width: 100%;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.2s;
+}
+.image::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1),transparent, transparent);
+    
+}
+.image p {
+    color: rgb(228, 228, 228);
+    position: relative;
+    bottom: -85%;
+    width: max-content;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
+    transition: 0.2s;
+}
+.image:hover > p, .image:hover {
+    transform: translateY(-10px);
+    background-size: 110%;
+}
+.hero-banner {
+    width: 100%;
+    padding: 2rem 5rem ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-banner > .header {
+    margin: 1rem;
+}
+.header > h1 {
+    margin: auto;
+    font-size: 2rem;
+    max-width: 20rem;
+    color: black;
+}
+span {
+    color: rgb(226, 70, 70);
+}
+.images {
+    position: relative;
+    height: 30rem;
+    width: 35rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.images > .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.images:hover > .img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(30deg, rgb(0, 0, 0), transparent);
+}
+.img h2 {
+    position: absolute;
+    bottom: 20%;
+    font-size: 3rem;
+    color: white;
+    margin-left: 1rem;
+    transform: translateY(200px);
+}
+.img p {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1rem;
+    color: white;
+    transform: translateY(100px);
+    margin-left: 1rem;
+}
+.img:hover p {
+    transform: translateY(0);
+}
+.img:hover h2 {
+    transform: translateY(0);
+}
+.img > .text {
+    color: red;
+}
+.img1 {
+    background-image: url('../img/food1.jpg');
+    clip-path: polygon(0 0, 0 100%, 50% 100%);
+}
+.img2 {
+    background-image: url('../img/food4.jpg');
+    clip-path: polygon(0 0, 50% 0, 50% 100%);
+}
+
+.img3 {
+    background-image: url('../img/food9.jpg');
+    clip-path: polygon(100% 100%, 50% 0, 50% 100%);
+}
+
+.img4 {
+    background-image: url('../img/food7.jpg');
+    clip-path: polygon(100% 100%, 50% 0, 100% 0);
+
+
+}
+.images:hover > .img {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+.images > .img:hover {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+
+}
+@media screen and (max-width: 960px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .imageContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero-banner {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    .imageContainer {
+        grid-template-columns: 1fr;
+    }
+    .images {
+        height: 20rem;
+        width: 23rem;
+    }
+}
